@@ -15,8 +15,8 @@ function redirectSecure(req, res, next) {
 }
 
 if (process.env.NODE_ENV !== "development") {
-	//server.use(helmet());
-	//server.use(redirectSecure);
+	server.use(helmet());
+	server.use(redirectSecure);
 }
 
 server.enable('trust proxy');

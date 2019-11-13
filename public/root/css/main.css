@@ -1,0 +1,135 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1.2;
+    background: lightgray;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'B612', sans-serif;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+h1 {
+    font-size: 3em;
+}
+h2 {
+    font-size: 2em;
+}
+h3 {
+    font-size: 1.5em;
+}
+h4 {
+    font-size: 1.3em;
+}
+h5 {
+    font-size: 1.2em;
+}
+h6 {
+    font-size: 1.1em;
+}
+
+p {
+    font-family: 'Muli', sans-serif;
+    font-size: 1.3em;
+    text-align: justify;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.title {
+    width: 100%;
+    flex-wrap: wrap;
+    background: #4D0AA4;
+    background: -moz-linear-gradient(top, #4D0AA4 0%, #1F4FC9 50%, #291375 100%);
+    background: -webkit-linear-gradient(top, #4D0AA4 0%, #1F4FC9 50%, #291375 100%);
+    background: linear-gradient(to bottom, #4D0AA4 0%, #1F4FC9 50%, #291375 100%);    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.main-image {
+    min-width: 150px;
+    width: 10%;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.68); 
+    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.68);
+}
+
+.title h1, .title h2 {
+    color: white;
+}
+
+.social-links {
+    align-self: flex-end;
+    padding: 10px;
+    min-width: 250px;
+    width:15%;
+    color: white;
+    text-align: center;
+}
+
+.social-links img{
+    width: 15%;
+}
+
+.container {
+    width: 85vw;
+    max-width: 1200px;
+    background: white;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 10px 10px 0  0;
+    min-height: 50vh;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .title {
+        text-align: center;
+    }
+}

@@ -28,6 +28,7 @@ body {
   height: 100%;
   background: linear-gradient(#0C0E10, #446182);
 }
+
 .background .ground {
   position: absolute;
   bottom: 0;
@@ -35,6 +36,18 @@ body {
   height: 25vh;
   background: #0C0E10;
 }
+
+#linkHome {
+  text-align: center;
+  color: white;
+  margin: 0 auto;
+}
+#linkHome a {
+  text-align: center;
+  color: white;
+  margin: 0 auto;
+}
+
 @media (max-width: 770px) {
   .background .ground {
     height: 0vh;
