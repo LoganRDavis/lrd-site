@@ -82,9 +82,9 @@ p {
     width: 100%;
     flex-wrap: wrap;
     background: #4D0AA4;
-    background: -moz-linear-gradient(top, #4D0AA4 0%, #1F4FC9 50%, #291375 100%);
-    background: -webkit-linear-gradient(top, #4D0AA4 0%, #1F4FC9 50%, #291375 100%);
-    background: linear-gradient(to bottom, #4D0AA4 0%, #1F4FC9 50%, #291375 100%);    display: flex;
+    background: -moz-linear-gradient(top, #4D0AA4 0%, #1F4FC9 10%, #291375 100%);
+    background: -webkit-linear-gradient(top, #4D0AA4 0%, #1F4FC9 10%, #291375 100%);
+    background: linear-gradient(to bottom, #4D0AA4 0%, #1F4FC9 10%, #291375 100%);    display: flex;
     justify-content: center;
     align-items: center;
     vertical-align: middle;
@@ -109,12 +109,16 @@ p {
     padding: 10px;
     min-width: 250px;
     width:15%;
-    color: white;
     text-align: center;
 }
 
-.social-links img{
+.social-links a {
+    color: white;
+}
+
+.social-links img {
     width: 15%;
+    max-height: 40px;
 }
 
 .container {
@@ -127,9 +131,67 @@ p {
     min-height: 50vh;
 }
 
+.education {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    background: #CECECE;
+    background: -moz-linear-gradient(top, #CECECE 0%, #E0E0E0 44%, #E7E7E7 100%);
+    background: -webkit-linear-gradient(top, #CECECE 0%, #E0E0E0 44%, #E7E7E7 100%);
+    background: linear-gradient(to bottom, #CECECE 0%, #E0E0E0 44%, #E7E7E7 100%);
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 4px 15px 2px rgba(0,0,0,0.15); 
+    box-shadow: 0px 4px 15px 2px rgba(0,0,0,0.15);
+}
+
+.education-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.education-title {
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+}
+
+.education-item img {
+    width: 15%;
+    min-width: 110px;
+    border-radius: 10px;
+}
+
+.education h2 {
+    text-decoration: underline;
+}
+
+.work {
+    margin: 25px;
+}
+
+.work-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #939393;
+}
+
+.work-item img {
+    min-width: 220px;
+    float: left;
+    width: 30%;
+}
 
 @media only screen and (max-width: 800px) {
     .title {
         text-align: center;
+    }
+    a {
+        word-break: break-all;
+    }
+    p {
+        text-align: left;
     }
 }

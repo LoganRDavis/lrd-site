@@ -21,7 +21,7 @@ if (process.env.NODE_ENV !== "development") {
 
 server.enable('trust proxy');
 server.use(express.static(__dirname + '/public'));
-//server.use(favicon(global.dir + '/public/images/logo/favicon.ico'));
+server.use(favicon(global.dir + '/public/images/logan/2019-professional-casual.png'));
 server.use(subdomain('www', require(__dirname + '/routers/www')));
 server.use('/', require(__dirname + '/routers/root'));
 
