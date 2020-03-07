@@ -1,0 +1,16 @@
+{
+	"short_name": "LRD Home",
+	"name": "Logan R Davis",
+	"description": "Software Engineer & Entrepreneur",
+	"display": "standalone",
+	"icons": [
+		{
+			"src": "icon-192.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		}
+	],
+	"start_url": "/",
+	"background_color": "#ffffff",
+	"theme_color": "#2c3892"
+}
