@@ -510,19 +510,37 @@ section {
 	background-color: white;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
+	justify-content: space-between;
+}
+
+.side-by-side div {
+	width: 60%;
 }
 
 .side-by-side img {
+	object-fit: contain;
 	width: 100%;
-	max-width: 400px;
 	max-height: 400px;
 	border-radius: 10px;
 }
 
 .side-by-side a {
+	width: 30%;
 	text-decoration: underline;
 	color: blue;
+}
+
+a {
+	word-break: break-all;
+}
+
+@media screen and (max-width:600px) {
+	.side-by-side {
+		justify-content: center;
+	}
+	.side-by-side a, .side-by-side div {
+		width: 90%;
+	}
 }
 
 .anchor-links {
