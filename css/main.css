@@ -528,9 +528,6 @@ section {
 	width: 30%;
 	text-decoration: underline;
 	color: blue;
-}
-
-a {
 	word-break: break-all;
 }
 
