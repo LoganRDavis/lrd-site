@@ -2,6 +2,13 @@
 <html class="no-js" lang="">
 
 <head>
+	<!-- Google Analytics: -->
+	<script>
+		window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+		ga('create', 'UA-152621464-1', 'auto'); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+	</script>
+	<script src="https://www.google-analytics.com/analytics.js" async></script>
+
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="theme-color" content="#fafafa">
@@ -28,20 +35,92 @@
 
 	<link rel="manifest" href="/site.webmanifest">
 	<link rel="apple-touch-icon" href="/icon-192.png">
-	<link rel="stylesheet" href="/css/normalize.css">
 	<link rel="stylesheet" href="/css/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
-	<div id="preloader" style="width:100%;height:100%;position:absolute;z-index:999;;background-color:white;">
-		<img src="images/logo/animated-icon.gif" alt="Loading Icon"
+	<div id="preloader" style="display:none;width:100%;height:100%;position:absolute;z-index:999;background-color:white;">
+		<img src="images/logo/animated-icon.gif" alt="Loading icon"
 			style="width:150px;height:150px;position:fixed;top:50vh;left:50vw;margin-top:-75px;margin-left:-75px;">
 	</div>
 
-	<div class="main-container" style="display: none;">
+	<script>
+		localStorage = window.localStorage;
+		const visited = localStorage.getItem('visited');
+		if (!visited) {
+			document.getElementById('preloader').style.display = "block";
+			document.addEventListener("DOMContentLoaded", () => {
+				document.getElementById('preloader').style.display = "none";
+			});
+		}
+		localStorage.setItem('visited', true);
+	</script>
+
+	<div class="main-container">
 		<header>
-			<div id="headerContent"></div>
+			<div id="headerContent">
+				<div>
+					<a href="/"><img class="header-logo" src="/images/logo/horizontal-transparent.svg" alt="LRD Logo"></a>
+				</div>
+
+				<div class="hamburger-icon" onclick="hamburgerIconClick()">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+				</div>
+
+				<div class="desktop-menu">
+					<nav>
+						<ul>
+							<li><a href="/">Home</a></li>
+							<li>|</li>
+							<li><a href="/background.html">Background</a></li>
+							<li>|</li>
+							<li><a href="/portfolio.html">Portfolio</a></li>
+							<li>|</li>
+							<li><a href="https://github.com/loganrdavis"><img src="/images/github-logo.png" alt="Github Logo"
+										style="max-width: unset;"></a>
+							</li>
+							<li><a href="https://www.linkedin.com/in/loganrdavis/"><img src="/images/linked-in-logo.png"
+										alt="LinkedIn Logo" style="max-width: unset;"></a></li>
+							<li><a href="https://www.youtube.com/user/StudiosBOS"><img src="/images/youtube-logo.png"
+										alt="YouTube Logo" style="max-width: unset;"></a></li>
+							<li><a href="https://www.facebook.com/loganrickydavis"><img src="/images/facebook-logo.png"
+										alt="Facebook Logo" style="max-width: unset;"></a></li>
+							<li><a href="/documents/logan-davis-resume.pdf"><img src="/images/resume.png" alt="Resume Logo"
+										style="max-width: unset;"></a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+				<div class="mobile-menu-container" id="mobile-menu-container">
+					<div class="mobile-menu-outside" onclick="hamburgerIconClick()"></div>
+					<div class="mobile-menu" id="mobile-menu">
+						<nav class="mobile-menu-nav">
+							<ul>
+								<li class="mobile-menu-li"><a href="/">Home</a></li>
+								<li class="mobile-menu-li"><a href="/background.html">Background</a></li>
+								<li class="mobile-menu-li"><a href="/portfolio.html">Portfolio</a></li>
+								<li class="mobile-menu-li"><a href="https://github.com/loganrdavis"><img src="/images/github-logo.png"
+											alt="Github Logo" style="max-width: unset;"></a>
+								</li>
+								<li class="mobile-menu-li"><a href="https://www.linkedin.com/in/loganrdavis/"><img
+											src="/images/linked-in-logo.png" alt="LinkedIn Logo" style="max-width: unset;"></a></li>
+								<li class="mobile-menu-li"><a href="https://www.youtube.com/user/StudiosBOS"><img
+											src="/images/youtube-logo.png" alt="YouTube Logo" style="max-width: unset;"></a></li>
+								<li class="mobile-menu-li"><a href="https://www.facebook.com/loganrickydavis"><img alt="Facebook Logo"
+											src="/images/facebook-logo.png" style="max-width: unset;"></a></li>
+								<li class="mobile-menu-li"><a href="/documents/logan-davis-resume.pdf"><img src="/images/resume.png"
+											alt="Resume Logo" style="max-width: unset;"></a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+
+				<script> function hamburgerIconClick() { document.getElementById('headerContent').classList.toggle("hamburger-icon-click"); }</script>
+			</div>
 		</header>
 
 		<section>
@@ -172,24 +251,47 @@
 
 			<br>
 			<div style="margin: 15px auto 15px auto;text-align: center;">
-				<button
-					onclick="document.location.href = 'https://forms.gle/DytXdH56Lr8RSzMeA';">Contact
+				<button onclick="document.location.href = 'https://forms.gle/DytXdH56Lr8RSzMeA';">Contact
 					Me!</button>
 			</div>
 			<br>
 		</section>
 
 		<footer>
-			<div id="footerContent"></div>
+			<div id="footerContent">
+				<div class="footer-container">
+					<div>
+						<a href="/"><img src="/images/logo/vertical-transparent.svg" alt="LRD Logo"></a>
+					</div>
+					<div>
+						<p>Logan R Davis<br>
+							<a href="tel:+14795304482">1 (479) 530-4482</a><br>
+							<a style="word-break: break-all;" href="mailto:logan@loganrdavis.com">logan@loganrdavis.com</a><br>
+						</p>
+					</div>
+					<div>
+						<p>
+							Copyright ©2020 Logan R Davis<br>
+							All rights reserved.<br>
+						<ul>
+							<li><a href="https://github.com/loganrdavis"><img src="/images/github-logo.png" alt="Github Logo"
+										style="max-width: unset;"></a>
+							</li>
+							<li><a href="https://www.linkedin.com/in/loganrdavis/"><img src="/images/linked-in-logo.png"
+										alt="LinkedIn Logo" style="max-width: unset;"></a></li>
+							<li><a href="https://www.youtube.com/user/StudiosBOS"><img src="/images/youtube-logo.png"
+										alt="YouTube Logo" style="max-width: unset;"></a></li>
+							<li><a href="https://www.facebook.com/loganrickydavis"><img src="/images/facebook-logo.png"
+										alt="Facebook Logo" style="max-width: unset;"></a></li>
+							<li><a href="/documents/logan-davis-resume.pdf"><img src="/images/resume.png" alt="Resume Logo"
+										style="max-width: unset;"></a></li>
+						</ul>
+						</p>
+					</div>
+				</div>
+			</div>
 		</footer>
 	</div>
-
-	<script src="js/vendor/modernizr-3.8.0.min.js"></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
-	<script src="js/plugins.js"></script>
-	<script src="js/main.js"></script>
 </body>
 
 </html>
