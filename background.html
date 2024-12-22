@@ -99,129 +99,124 @@
 		</header>
 
 		<section>
-			<h2 class="title">My Work and Educational Experience</h2>
-			<div class="side-by-side">
-				<a href="https://sift.com/"><img src="/images/sift.png" alt="Sift Logo"></a>
-				<div>
-					<h2>Senior Software Engineer, Core Infrastructure</h2>
-					<h4>Sift</h4>
-					<p>October 2020 - Present <br>
-						<a href="https://sift.com/">sift.com</a> | <a
-							href="https://github.com/loganrdavis-ns8">github.com/loganrdavis-sift</a>
-					</p>
+			<div class="side-by-side-container">
+				<h2 class="title">My Work and Educational Experience</h2>
+				<div class="side-by-side">
+					<div>
+						<a href="https://sift.com/"><img src="/images/sift.png" alt="Sift Logo"></a>
+						<h2>Senior Software Engineer, Core Infrastructure</h2>
+						<h4>August 2022 - Present</h4>
+						<p>
+							Sift is the AI-powered fraud platform securing digital trust for leading global businesses. Sift has deep investments in machine learning and user identity, a data network scoring 1 trillion events per year, and a commitment to long-term customer success empower more than 700 customers to grow fearlessly. Brands including DoorDash, Yelp, and Poshmark rely on Sift to unlock growth and deliver seamless consumer experiences.
+							<ul>
+								<li>Owned the largest company database, Bigtable, which stored petabytes of data and processed hundreds of thousands of requests per second. Handled multiple incidents requiring data recovery as well as table/cluster migrations.</li>
+								<li>Lead a multi-phase secrets migration from salt pillars with GPG keys to Hashicorp Vault with auto-key rotation.</li>
+								<li>Re-configured the access control of Bigtable, Snowflake, and general GCP IAM to better integrate with our SSO provider and adhere to least privilege.</li>
+								<li>Over the course of several years, contributed millions in annual cloud cost savings by optimizing systems.</li>
+							</ul>
+							<a href="https://sift.com/">sift.com</a> | <a
+								href="https://github.com/loganrdavis-sift">github.com/loganrdavis-sift</a>
+						</p>
+					</div>
 				</div>
-			</div>
-			<hr style="background-color: black; color:black; border-top: black; margin: 0;">
-			<div class="side-by-side">
-				<div>
-					<h2>Software Engineer, Site Reliability</h2>
-					<h4>NS8 Inc</h4>
-					<p>June 2020 - September 2020 <br>
-						As part of the SRE team, I was responsible for handling numerous parts of our system. I ran some of our
-						weekly deployments, helped manage our AWS resources via terraform, responded to incidents, implemented
-						logging and alerting, handled security vulnerabilities, and performed many other SRE duties. When I joined
-						the company, we had a very basic implementation of Honeycomb that was not fully setup. There were numerous
-						incomplete traces, unnecessary paging, and diagnosing issues were cumbersome to say the least. My first set
-						of responsibilities involved improving our logging to have complete and accurate tracing as well as add
-						additional metrics. I also documented our implementation for future engineers to utilize. After
-						accomplishing this, I moved on to managing IAM roles using terraform to create new groups, cross account
-						roles, and assign users. While working at NS8, I also identified and remedied multiple security risks
-						ranging from R1 to R3.
-						Departed for no reason other than internal company legal issues that led to the dissolution of the company.
-						<br>
-						<a href="https://www.ns8.com/en-us">www.ns8.com</a> | <a
-							href="https://github.com/loganrdavis-ns8">github.com/loganrdavis-ns8</a> | <a
-							href="https://www.forbes.com/sites/davidjeans/2020/10/29/fraud-software-company-ns8-files-bankruptcy-after-ceo-arrest/?sh=1611e633382e">Forbes
-							NS8 Interal Investigation</a>
-					</p>
+				<hr style="background-color: black; color:black; border-top: black; margin: 0;">
+				<div class="side-by-side">
+					<div>
+						<a href="https://sift.com/"><img src="/images/sift.png" alt="Sift Logo"></a>
+						<h2>Software Engineer, Core Infrastructure</h2>
+						<h4>October 2020 - July 2022</h4>
+						<p>
+							<ul>
+								<li>Migrated an expensive multi-terabyte self-managed Memcached GCE Cluster to GCP managed Memorystore cluster while also saving costs.</li>
+								<li>Coordinated the upgrade process from Ubuntu 16 Xenial to Ubuntu 20 Focal across the entire engineering organization.</li>
+								<li>Contributed to the hiring process, mentored an intern, and handled numerous onboarding/offboarding events.</li>
+								<li>Participated in SOC2 interviews and ISO 27001 audit evidence gathering.</li>
+							</ul>
+							<a href="https://sift.com/">sift.com</a> | <a
+								href="https://github.com/loganrdavis-sift">github.com/loganrdavis-sift</a>
+						</p>
+					</div>
 				</div>
-				<a href="https://www.ns8.com/en-us"><img src="/images/ns8-logo.svg" alt="NS8 Inc Logo"></a>
-			</div>
-			<hr style="background-color: black; color:black; border-top: black; margin: 0;">
-			<div class="side-by-side">
-				<a href="/"><img src="/images/logo/website_logo_solid_background.png" alt="LRD Logo"></a>
-				<div>
-					<h2>Logan R Davis</h2>
-					<h4>Freelance</h4>
-					<p>January 2020 - April 2020<br>
-						From web apps to simple static websites, domain registration to email provider, videography to video
-						editing. Whatever my client’s technical needs were, I fulfilled them. I built and managed multiple client’s
-						websites, email servers, and produced videos for them to publish to social media.
-						See my <a href="/portfolio.html">portfolio</a> for examples of what I can do.
-						<br>
-						<a href="/">www.loganrdavis.com</a>
-					</p>
+				<hr style="background-color: black; color:black; border-top: black; margin: 0;">
+				<div class="side-by-side">
+					<div>
+						<a href="https://www.ns8.com/en-us"><img src="/images/ns8-logo.svg" alt="NS8 Inc Logo"></a>
+						<h2>Software Engineer, Site Reliability</h2>
+						<h4>June 2020 - September 2020</h4>
+						<p>
+							NS8 safeguards online businesses against advertising fraud, transaction fraud, and poor site performance. NS8 protects against threats and offers better insight into real customers by utilizing behavioral analytics, real-time user scoring, and global monitoring. Available through easy-to-install plugins on multiple platforms, NS8's solutions empower merchants to quickly minimize risk, better automate fraud management and realize savings throughout the customer lifecycle.
+							<ul>
+								<li>Departed for no reason other than the dissolution of the company due to internal legal issues.</li>
+								<li>Improved Honeycomb OpenTelemetry integration to have complete and accurate tracing to assist with incidents and debugging.</li>
+								<li>Refactored AWS IAM roles and groups in terraform to restrict access and permit cross account resource access.</li>
+								<li>Monitored and initiated multiple weekly deployments. </li>
+								<li>Identified and worked to remedy numerous security risks found in our public API.</li>
+							</ul>
+							<br>
+							<a href="https://github.com/loganrdavis-ns8">github.com/loganrdavis-ns8</a> | <a
+								href="https://www.forbes.com/sites/davidjeans/2020/10/29/fraud-software-company-ns8-files-bankruptcy-after-ceo-arrest/?sh=1611e633382e">Forbes
+								NS8 Interal Investigation</a>
+						</p>
+					</div>
 				</div>
-			</div>
-			<hr style="background-color: black; color:black; border-top: black; margin: 0;">
-			<div class="side-by-side">
-				<div>
-					<h2>Labor Saver Solutions</h2>
-					<h4>Co-Founder & Chief Technology Officer</h4>
-					<p>May 2018 - April 2020<br>
-						I started my own company as the sole software and hardware engineer. I developed and my partner sold
-						technology devices and services. Our products were wireless RF call buttons and temperature sensors, online
-						party booking software, and virtual reality stations. We provided backend web apps that allowed for analysis
-						of data as well as setup of email/texting notifications and reports based on user preferences. As the sole
-						technology provider, I have experience developing database schemas, restful APIs, micro-controller
-						processes, multi-threaded hub controller units, front-end user experiences, processing payments, as well as
-						performing many other activities to create a fully developed product. I have designed PCB schematics using
-						Eagle CAD and worked with foreign manufacturers to acquire parts. I have also worked with external services
-						such as SendGrid, Twilio, and Google Cloud to provide an all-encompassing service.<br>
-						<a href="https://www.laborsaver.solutions">www.laborsaver.solutions</a>
-					</p>
+				<hr style="background-color: black; color:black; border-top: black; margin: 0;">
+				<div class="side-by-side">
+					<div>
+						<h2>Co-Founder</h2>
+						<a href="https://www.laborsaver.solutions"><img src="/images/lss-logo-horizontal.png"
+							alt="Labor Saver Solutions Logo"></a>
+						<h4>May 2018 - April 2020</h4>
+						<p>
+							Labor Saver LLC provides smart business software and hardware solutions such as remote call buttons, online booking software, and more! Labor Savers innovative solutions help business operations dial in on what matters most, their guests. Bring a new level of service to your organization and let customers know they come first.
+							<ul>
+								<li>Built in its entirety, multiple cloud connected products that still serve customers today.</li>
+								<li>Designed, programmed, and manufactured RF 900MHz call buttons and temperature sensors including their PCBs and procured the various components to assemble.</li>
+								<li>Utilized CircleCI to test and deploy node.js code to GCP App Engine to manage and serve requests.</li>
+								<li>Produced intuitive dashboards and configuration pages to allow customers to monitor and customize their deployments along with SMS and email notification options.</li>
+								<li>Created payment gateways integrated with PayPal and Stripe to both charge customers and process payments on their behalf.</li>
+								<li>Implemented a scheduling system with fully customizable checkout workflows to empower customers with easy to use booking software.</li>
+							</ul>
+							<br>
+							<a href="https://www.laborsaver.solutions">www.laborsaver.solutions</a>
+						</p>
+					</div>
 				</div>
-				<a href="https://www.laborsaver.solutions"><img src="/images/lss-logo-vertical-filled.png"
-						alt="Labor Saver Solutions Logo"></a>
-			</div>
-			<hr style="background-color: black; color:black; border-top: black; margin: 0;">
-			<div class="side-by-side">
-				<a href="https://www.lokomotion.com"><img src="/images/lokomotion-filled.jpg" alt="Lokomotion Logo"></a>
-				<div>
-					<h2>Lokomotion Family Fun Park</h2>
-					<h4>Mechanic Manager</h4>
-					<p>March 2016 - August 2019<br>
-						I received on the job training as well as Honda TACS training in order to learn small engine and go kart
-						repair. I can completely disassemble a small engine or go kart and reassemble. I have also acquired a skill
-						for electrical wiring and system diagnosis. This position allowed me to become a manager overseeing
-						procurement of parts, budget management, managing apprentice mechanics, as well as making impactful
-						operation decisions.<br>
-						<a href="https://www.lokomotion.com">www.lokomotion.com</a>
-					</p>
+				<hr style="background-color: black; color:black; border-top: black; margin: 0;">
+				<div class="side-by-side">
+					<div>
+						<a href="https://www.lokomotion.com"><img src="/images/lokomotion.png" alt="Lokomotion Logo"></a>
+						<h2>Mechanic Manager</h2>
+						<h4>March 2016 - August 2019</h4>
+						<p>
+							Lokomotion is a family fun park with Go Karts, Mini Golf, Bumper Boats, Lazer Tag, & Spin Zone. Specializing in birthday parties, company picnics, & family get togethers. Northwest Arkansas' Favorite fun destination for every occasion. The only Go Karts & Bumper Boats in the area along with two 18-hole miniature golf courses.
+							<ul>
+								<li>Received on the job training as well as Honda TACS training in order to learn small engine and go kart repair.</li>
+								<li>Can completely disassemble/reassemble a small engine or go kart.</li>
+								<li>Acquired skills for electrical wiring, system diagnosis, welding, and others.</li>
+								<li>Became the manager overseeing procurement of parts, budget, apprentice training, as well as making impactful operation decisions.</li>
+							</ul>
+							<br>
+							<a href="https://www.lokomotion.com">www.lokomotion.com</a>
+						</p>
+					</div>
 				</div>
-			</div>
-			<hr style="background-color: black; color:black; border-top: black; margin: 0;">
-			<div class="side-by-side">
-				<div>
-					<h2>Computer Science</h2>
-					<h4>Bachelor's Degree - Minor in Information Systems</h4>
-					<p>University of Arkansas Fall 2016 to Fall 2019<br>
-						<a href="https://www.uark.edu/">www.uark.edu</a>
-					</p>
+				<hr style="background-color: black; color:black; border-top: black; margin: 0;">
+				<div class="side-by-side">
+					<div>
+						<a href="https://www.uark.edu/"><img src="/images/uark-logo.jpg" alt="University of Arkansas Logo"></a>
+						<h2>
+							Bachelor's In Computer Science
+							<br>
+							Minor in Information Systems
+						</h2>
+						<h4>University of Arkansas Fall 2016 to Fall 2019</h4>
+						<p>
+							<a href="https://www.uark.edu/">www.uark.edu</a>
+						</p>
+					</div>
 				</div>
-				<a href="https://www.uark.edu/"><img src="/images/uark-logo.jpg" alt="University of Arkansas Logo"></a>
+				<hr style="background-color: black; color:black; border-top: black; margin: 0;">
 			</div>
-			<hr style="background-color: black; color:black; border-top: black; margin: 0;">
-			<div class="side-by-side">
-				<a href="#"><img src="/images/certificate.svg" alt="Lokomotion Logo"></a>
-				<div>
-					<h2>Certifications</h2>
-					<p>
-					<ul>
-						<li>&#8226 Triplebyte (Generalist Software Engineering)
-							<br><a href="https://triplebyte.com/certificate/XGCanPy">triplebyte.com/certificate/XGCanPy </a>
-						</li>
-						<br><br>
-						<li>&#8226 Honda Engines TACS (Technician Level)
-							<br><a
-								href="/documents/logan-davis-honda-technician-certification.pdf">logan-davis-honda-technician-certification.pdf</a>
-						</li>
-					</ul>
-					<br>
-					</p>
-				</div>
-			</div>
-			<hr style="background-color: black; color:black; border-top: black; margin: 0;">
 			<br>
 
 			<br>
