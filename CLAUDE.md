@@ -17,7 +17,7 @@ Static personal website for loganrdavis.com. Pure HTML/CSS with no build system,
 - **Styles**: `css/main.css` (shared across main pages, based on HTML5 Boilerplate), `css/404.css` (standalone 404 page)
 - **Components**: `js/components.js` defines `<site-header>` and `<site-footer>` web components, used by all main pages
 - Header/footer/nav are defined once in the web components — edit `js/components.js` to change them
-- Font: Open Sans via Google Fonts
+- Font: Open Sans, self-hosted in `fonts/` (woff2)
 - Responsive design with a hamburger menu for mobile, desktop nav bar otherwise
 
 ## Key Patterns
@@ -25,3 +25,4 @@ Static personal website for loganrdavis.com. Pure HTML/CSS with no build system,
 - All asset paths use absolute paths from root (e.g., `/css/main.css`, `/images/...`)
 - Social/external links: GitHub, LinkedIn, resume PDF, and a Google Forms contact form
 - Images are stored in `images/` with subdirectories for logos (`images/logo/`) and drone photos (`images/drone/`)
+- Deploy excludes dotfiles, `README.md`, `CLAUDE.md`, `Makefile`, and `colors.txt` via `gsutil rsync -x`

@@ -277,7 +277,7 @@ header nav a:hover { color:#f14624; }
 	transition: 0.4s;
 }
 
-.hamburger-icon-click .mobile-menu-container { opacity: 1; height: auto; overflow: show; }
+.hamburger-icon-click .mobile-menu-container { opacity: 1; height: auto; overflow: visible; }
 .hamburger-icon-click .mobile-menu { width: 50%; }
 .hamburger-icon-click .mobile-menu-outside { width: 100%; }
 .hamburger-icon-click .bar1 {  transform: rotate(-45deg) translate(-9px, 6px); }
