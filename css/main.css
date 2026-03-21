@@ -264,7 +264,7 @@ textarea {
 }
 
 body {
-	font-size: 1.4em;
+	font-size: 1.15em;
 	font-family: 'Open Sans';
 	position: relative;
 	height: 100%;
@@ -880,7 +880,7 @@ section {
 }
 
 .side-by-side {
-	padding: 50px;
+	padding: 30px 50px;
 	background-color: white;
 	display: flex;
 	flex-wrap: wrap;
@@ -911,6 +911,21 @@ section {
 	border-radius: 10px;
 }
 
+.side-by-side li {
+	margin-bottom: 0.6em;
+	line-height: 1.5;
+}
+
+.side-by-side ul {
+	margin-top: 1em;
+}
+
+.section-divider {
+	border: none;
+	border-top: 1px solid #ddd;
+	margin: 0;
+}
+
 .side-by-side a {
 	width: 30%;
 	text-decoration: underline;
@@ -921,9 +936,21 @@ section {
 @media screen and (max-width:600px) {
 	.side-by-side {
 		justify-content: center;
+		padding: 20px;
 	}
 	.side-by-side a, .side-by-side div {
-		width: 90%;
+		width: 100%;
+	}
+	.side-by-side ul {
+		padding-left: 1.2em;
+	}
+	.side-by-side img {
+		width: 40%;
+		margin-bottom: 10px;
+	}
+	.side-by-side h2 {
+		width: 100%;
+		float: none;
 	}
 }
 
