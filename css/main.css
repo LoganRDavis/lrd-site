@@ -196,59 +196,6 @@ textarea {
   margin: 0; /* 2 */
 }
 
-/**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
- */
-
-button,
-input { /* 1 */
-  overflow: visible;
-}
-
-/**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
- */
-
-button,
-select { /* 1 */
-  text-transform: none;
-}
-
-/**
- * Correct the inability to style clickable types in iOS and Safari.
- */
-
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
-}
-
-/**
- * Remove the inner border and padding in Firefox.
- */
-
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-/**
- * Restore the focus styles unset by the previous rule.
- */
-
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
 
 [hidden] {
   display: none;
@@ -305,6 +252,11 @@ header li {
 }
 
 header nav a:hover { color:#f14624; }
+
+.desktop-menu li:nth-child(-n+2) {
+	border-right: 1px solid #ccc;
+	padding-right: 20px;
+}
 
 .hamburger-icon {
 	z-index: 6;
@@ -616,7 +568,7 @@ section {
 }
 
 .anchor-links {
-	margin: 0 auto;
+	margin: 0 auto 1.5em auto;
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
@@ -633,6 +585,7 @@ section {
 	text-align: center;
 	background: white;
 	padding: 20px 10% 20px 10%;
+	margin-bottom: 1.5em;
 }
 
 .centered-text p {
@@ -654,11 +607,36 @@ section {
 	margin: 0 auto;
 }
 
+.image-grid-3col {
+  display: grid;
+  grid-column-gap: 0;
+	grid-template-columns: auto auto auto;
+	max-width: 650px;
+	margin: 0 auto;
+}
+
+.image-grid-3col img {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
+.contact-cta {
+	margin: 0 auto;
+	padding: 3em 0;
+	text-align: center;
+}
+
 .image-grid img {
   border: 1px solid rgba(0, 0, 0, 0.8);
   text-align: center;
   width: 100%;
   height: auto;
+}
+
+.image-grid video {
+  grid-column: 1 / -1;
 }
 
 footer {

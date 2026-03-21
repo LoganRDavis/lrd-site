@@ -18,14 +18,11 @@ class SiteHeader extends HTMLElement {
             <nav>
               <ul>
                 <li><a href="/">Home</a></li>
-                <li>|</li>
                 <li><a href="/background.html">Background</a></li>
-                <li>|</li>
                 <li><a href="/portfolio.html">Portfolio</a></li>
-                <li>|</li>
-                <li><a href="https://github.com/loganrdavis" rel="noopener noreferrer"><img src="/images/github-logo.webp" alt="Github Logo" width="40" height="40" style="max-width: unset;"></a></li>
-                <li><a href="https://www.linkedin.com/in/loganrdavis/" rel="noopener noreferrer"><img src="/images/linked-in-logo.webp" alt="LinkedIn Logo" width="40" height="40" style="max-width: unset;"></a></li>
-                <li><a href="/documents/logan-davis-resume.pdf"><img src="/images/resume.webp" alt="Resume Logo" width="40" height="40" style="max-width: unset;"></a></li>
+                <li><a href="https://github.com/loganrdavis" rel="noopener noreferrer" aria-label="GitHub profile"><img src="/images/github-logo.webp" alt="Github Logo" width="40" height="40" style="max-width: unset;"></a></li>
+                <li><a href="https://www.linkedin.com/in/loganrdavis/" rel="noopener noreferrer" aria-label="LinkedIn profile"><img src="/images/linked-in-logo.webp" alt="LinkedIn Logo" width="40" height="40" style="max-width: unset;"></a></li>
+                <li><a href="/documents/logan-davis-resume.pdf" aria-label="Download resume"><img src="/images/resume.webp" alt="Resume Logo" width="40" height="40" style="max-width: unset;"></a></li>
               </ul>
             </nav>
           </div>
@@ -38,9 +35,9 @@ class SiteHeader extends HTMLElement {
                   <li class="mobile-menu-li"><a href="/">Home</a></li>
                   <li class="mobile-menu-li"><a href="/background.html">Background</a></li>
                   <li class="mobile-menu-li"><a href="/portfolio.html">Portfolio</a></li>
-                  <li class="mobile-menu-li"><a href="https://github.com/loganrdavis" rel="noopener noreferrer"><img src="/images/github-logo.webp" alt="Github Logo" width="40" height="40" style="max-width: unset;"></a></li>
-                  <li class="mobile-menu-li"><a href="https://www.linkedin.com/in/loganrdavis/" rel="noopener noreferrer"><img src="/images/linked-in-logo.webp" alt="LinkedIn Logo" width="40" height="40" style="max-width: unset;"></a></li>
-                  <li class="mobile-menu-li"><a href="/documents/logan-davis-resume.pdf"><img src="/images/resume.webp" alt="Resume Logo" width="40" height="40" style="max-width: unset;"></a></li>
+                  <li class="mobile-menu-li"><a href="https://github.com/loganrdavis" rel="noopener noreferrer" aria-label="GitHub profile"><img src="/images/github-logo.webp" alt="Github Logo" width="40" height="40" style="max-width: unset;"></a></li>
+                  <li class="mobile-menu-li"><a href="https://www.linkedin.com/in/loganrdavis/" rel="noopener noreferrer" aria-label="LinkedIn profile"><img src="/images/linked-in-logo.webp" alt="LinkedIn Logo" width="40" height="40" style="max-width: unset;"></a></li>
+                  <li class="mobile-menu-li"><a href="/documents/logan-davis-resume.pdf" aria-label="Download resume"><img src="/images/resume.webp" alt="Resume Logo" width="40" height="40" style="max-width: unset;"></a></li>
                 </ul>
               </nav>
             </div>
@@ -67,9 +64,9 @@ class SiteFooter extends HTMLElement {
                 <a style="word-break: break-all;" href="mailto:logan@loganrdavis.com">logan@loganrdavis.com</a>
               </p>
               <ul>
-                <li><a href="https://github.com/loganrdavis" rel="noopener noreferrer"><img src="/images/github-logo.webp" alt="Github Logo" width="40" height="40" style="max-width: unset;"></a></li>
-                <li><a href="https://www.linkedin.com/in/loganrdavis/" rel="noopener noreferrer"><img src="/images/linked-in-logo.webp" alt="LinkedIn Logo" width="40" height="40" style="max-width: unset;"></a></li>
-                <li><a href="/documents/logan-davis-resume.pdf"><img src="/images/resume.webp" alt="Resume Logo" width="40" height="40" style="max-width: unset;"></a></li>
+                <li><a href="https://github.com/loganrdavis" rel="noopener noreferrer" aria-label="GitHub profile"><img src="/images/github-logo.webp" alt="Github Logo" width="40" height="40" style="max-width: unset;"></a></li>
+                <li><a href="https://www.linkedin.com/in/loganrdavis/" rel="noopener noreferrer" aria-label="LinkedIn profile"><img src="/images/linked-in-logo.webp" alt="LinkedIn Logo" width="40" height="40" style="max-width: unset;"></a></li>
+                <li><a href="/documents/logan-davis-resume.pdf" aria-label="Download resume"><img src="/images/resume.webp" alt="Resume Logo" width="40" height="40" style="max-width: unset;"></a></li>
               </ul>
             </div>
           </div>
