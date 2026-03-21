@@ -28,7 +28,7 @@ class SiteHeader extends HTMLElement {
           </div>
 
           <div class="mobile-menu-container" id="mobile-menu-container">
-            <div class="mobile-menu-outside" onclick="document.getElementById('headerContent').classList.toggle('hamburger-icon-click')"></div>
+            <div class="mobile-menu-outside" role="button" tabindex="0" aria-label="Close navigation menu" onclick="document.getElementById('headerContent').classList.toggle('hamburger-icon-click')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();document.getElementById('headerContent').classList.toggle('hamburger-icon-click')}"></div>
             <div class="mobile-menu" id="mobile-menu">
               <nav class="mobile-menu-nav">
                 <ul>

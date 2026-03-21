@@ -542,7 +542,7 @@ section {
 .side-by-side a {
 	width: 30%;
 	text-decoration: underline;
-	color: blue;
+	color: #1a5fb4;
 	word-break: break-all;
 }
 
@@ -595,7 +595,7 @@ section {
 
 .centered-text a {
 	text-decoration: underline;
-	color: blue;
+	color: #1a5fb4;
 	word-break: break-all;
 }
 
