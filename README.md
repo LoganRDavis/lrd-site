@@ -2,7 +2,13 @@
 My personal website.
 https://www.loganrdavis.com/
 
-## Uploading
+## Local Testing
 ```
-gsutil -m rsync -x '.git.*|.vscode.*|README.md|colors.txt' -d -r ./ gs://www.loganrdavis.com
+make serve
+```
+Then open http://localhost:8000
+
+## Deploying
+```
+make deploy
 ```
