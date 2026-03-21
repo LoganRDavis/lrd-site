@@ -33,54 +33,76 @@
 	<link rel="manifest" href="/site.webmanifest">
 	<link rel="apple-touch-icon" href="/icon-192.png">
 	<link rel="stylesheet" href="/css/main.css">
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 	<script src="/js/components.js" defer></script>
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Person",
+		"name": "Logan R Davis",
+		"jobTitle": "Staff Software Engineer, Cloud Infrastructure",
+		"worksFor": {
+			"@type": "Organization",
+			"name": "Pindrop",
+			"url": "https://www.pindrop.com/"
+		},
+		"url": "https://www.loganrdavis.com",
+		"sameAs": [
+			"https://github.com/loganrdavis",
+			"https://www.linkedin.com/in/loganrdavis/"
+		],
+		"alumniOf": {
+			"@type": "CollegeOrUniversity",
+			"name": "University of Arkansas"
+		},
+		"image": "https://www.loganrdavis.com/images/2024-logan-headshot.webp"
+	}
+	</script>
 </head>
 
 <body>
 	<div class="main-container">
 		<site-header></site-header>
 
-		<section>
+		<section id="main-content">
 			<div class="header-image-container">
-				<img src="/images/2024-logan-headshot.jpg" alt="Logan Ricky Davis" class="person-image">
+				<img src="/images/2024-logan-headshot.webp" alt="Logan Ricky Davis" class="person-image" width="500" height="500">
 				<h1>Logan Ricky Davis</h1>
-				<h2>Staff Software Engineer, Cloud Infrastructure at <a href="https://www.pindrop.com/">Pindrop</a></h2>
+				<h2>Staff Software Engineer, Cloud Infrastructure at <a href="https://www.pindrop.com/" rel="noopener noreferrer">Pindrop</a></h2>
 				<hr>
 				<p>
 					Cloud Infra Engineer with over 8 years of experience in GCP. Extremely passionate, self-driven engineer who embraces new challenges. Excels at cross-team collaboration and coordinating with cloud providers’ engineering teams to solve problems.
 				</p>
 			</div>
 			<div class="services">
-				<div class="service">
+				<a href="/background.html" class="service">
 					<div class="service-content">
-						<img src="images/logo/icon-only-white.png" alt="LRD Logo">
+						<img src="images/logo/icon-only-white.webp" alt="LRD Logo" width="300" height="261">
 						<h2>Background</h2>
 						<p>My work and educational experience</p>
-						<button onclick="document.location.href = '/background.html';">Learn More</button>
+						<span class="service-btn">Learn More</span>
 					</div>
-					<img src="images/knowledge.jpg" alt="Library" class="service-background">
-				</div>
-				<div class="service">
+					<img src="images/knowledge.webp" alt="Library" class="service-background" width="500" height="500" loading="lazy">
+				</a>
+				<a href="/portfolio.html" class="service">
 					<div class="service-content">
-						<img src="images/logo/icon-only-white.png" alt="LRD Logo">
+						<img src="images/logo/icon-only-white.webp" alt="LRD Logo" width="300" height="261">
 						<h2>Portfolio</h2>
 						<p>Take a look at some of my projects</p>
-						<button onclick="document.location.href = '/portfolio.html';">Learn More</button>
+						<span class="service-btn">Learn More</span>
 					</div>
-					<img src="images/programming.jpg" alt="Programming code" class="service-background">
-				</div>
+					<img src="images/programming.webp" alt="Programming code" class="service-background" width="500" height="500" loading="lazy">
+				</a>
 			</div>
 			<div class="full-width-image-container">
-				<img src="/images/keyboard.jpg" alt="Keyboard" class="full-width-image">
+				<img src="/images/keyboard.webp" alt="Keyboard" class="full-width-image" width="2000" height="957" loading="lazy">
 			</div>
 			<div class="text-content">
 				<h4>Solutions to Your Technological Needs</h4>
 				<p>From web apps to simple static websites, domain registration to email provider,
 					videography to video editing, whatever your technical needs are,
 					I can fulfill them. See my <a href="/portfolio.html">portfolio</a> for examples of what I can do.</p>
-				<button onclick="document.location.href = 'https://forms.gle/DytXdH56Lr8RSzMeA';">Contact
-					Me!</button>
+				<a href="https://forms.gle/DytXdH56Lr8RSzMeA" rel="noopener noreferrer" class="btn">Contact
+					Me!</a>
 			</div>
 		</section>
 

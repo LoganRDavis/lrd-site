@@ -1,11 +1,24 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/open-sans-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/open-sans-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
 /*! HTML5 Boilerplate v7.3.0 | MIT License | https://html5boilerplate.com/ */
 
 /* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
 
 /* ==========================================================================
    Base styles: opinionated defaults
@@ -15,21 +28,6 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
-}
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
 }
 
 ::selection {
@@ -48,6 +46,8 @@ hr {
   border-top: 1px solid #ccc;
   margin: 1em 0;
   padding: 0;
+  overflow: visible;
+  box-sizing: content-box;
 }
 
 /*
@@ -84,118 +84,23 @@ textarea {
 }
 
 /* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
-
-.browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-/* ==========================================================================
    Helper classes
    ========================================================================== */
 
-/*
- * Hide visually and from screen readers
- */
-
-.hidden {
-  display: none !important;
-}
-
-/*
-* Hide only visually, but have it available for screen readers:
-* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
-*
-* 1. For long content, line feeds are not interpreted as spaces and small width
-*    causes content to wrap 1 word per line:
-*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
-*/
-
-.sr-only {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
+.skip-link {
   position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
+  top: -100%;
+  left: 0;
+  background: #f14624;
+  color: #fff;
+  padding: 8px 16px;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-/*
-* Extends the .sr-only class to allow the element
-* to be focusable when navigated to via the keyboard:
-* https://www.drupal.org/node/897638
-*/
-
-.sr-only.focusable:active,
-.sr-only.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
-}
-
-/*
-* Hide visually and from screen readers, but maintain layout
-*/
-
-.invisible {
-  visibility: hidden;
-}
-
-/*
-* Clearfix: contain floats
-*
-* For modern browsers
-* 1. The space content is one way to avoid an Opera bug when the
-*    `contenteditable` attribute is included anywhere else in the document.
-*    Otherwise it causes space to appear at the top and bottom of elements
-*    that receive the `clearfix` class.
-* 2. The use of `table` rather than `block` is only necessary if using
-*    `:before` to contain the top-margins of child elements.
-*/
-
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
-}
-
-.clearfix:after {
-  clear: both;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+.skip-link:focus {
+  top: 0;
 }
 
 /* ==========================================================================
@@ -265,160 +170,11 @@ textarea {
 
 body {
 	font-size: 1.15em;
-	font-family: 'Open Sans';
+	font-family: 'Open Sans', sans-serif;
 	position: relative;
 	height: 100%;
-}
-
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-
-/* Document
-   ========================================================================== */
-
-/**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
- */
-
- html {
-  line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
-}
-
-/* Sections
-   ========================================================================== */
-
-/**
- * Remove the margin in all browsers.
- */
-
-body {
-  margin: 0;
-}
-
-/**
- * Render the `main` element consistently in IE.
- */
-
-main {
-  display: block;
-}
-
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-/* Grouping content
-   ========================================================================== */
-
-/**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
-
-hr {
-  box-sizing: content-box; /* 1 */
-  height: 0; /* 1 */
-  overflow: visible; /* 2 */
-}
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-
-pre {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
-}
-
-/* Text-level semantics
-   ========================================================================== */
-
-/**
- * Remove the gray background on active links in IE 10.
- */
-
-a {
-  background-color: transparent;
-}
-
-/**
- * 1. Remove the bottom border in Chrome 57-
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
-
-abbr[title] {
-  border-bottom: none; /* 1 */
-  text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
-}
-
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
-
-b,
-strong {
-  font-weight: bolder;
-}
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-
-code,
-kbd,
-samp {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
-}
-
-/**
- * Add the correct font size in all browsers.
- */
-
-small {
-  font-size: 80%;
-}
-
-/**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
- */
-
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
-
-/* Embedded content
-   ========================================================================== */
-
-/**
- * Remove the border on images inside links in IE 10.
- */
-
-img {
-  border-style: none;
+	margin: 0;
+	-webkit-text-size-adjust: 100%;
 }
 
 /* Forms
@@ -494,128 +250,6 @@ button:-moz-focusring,
   outline: 1px dotted ButtonText;
 }
 
-/**
- * Correct the padding in Firefox.
- */
-
-fieldset {
-  padding: 0.35em 0.75em 0.625em;
-}
-
-/**
- * 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
- */
-
-legend {
-  box-sizing: border-box; /* 1 */
-  color: inherit; /* 2 */
-  display: table; /* 1 */
-  max-width: 100%; /* 1 */
-  padding: 0; /* 3 */
-  white-space: normal; /* 1 */
-}
-
-/**
- * Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
-
-progress {
-  vertical-align: baseline;
-}
-
-/**
- * Remove the default vertical scrollbar in IE 10+.
- */
-
-textarea {
-  overflow: auto;
-}
-
-/**
- * 1. Add the correct box sizing in IE 10.
- * 2. Remove the padding in IE 10.
- */
-
-[type="checkbox"],
-[type="radio"] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
-}
-
-/**
- * Correct the cursor style of increment and decrement buttons in Chrome.
- */
-
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-/**
- * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari.
- */
-
-[type="search"] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
-}
-
-/**
- * Remove the inner padding in Chrome and Safari on macOS.
- */
-
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
- */
-
-::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
-}
-
-/* Interactive
-   ========================================================================== */
-
-/*
- * Add the correct display in Edge, IE 10+, and Firefox.
- */
-
-details {
-  display: block;
-}
-
-/*
- * Add the correct display in all browsers.
- */
-
-summary {
-  display: list-item;
-}
-
-/* Misc
-   ========================================================================== */
-
-/**
- * Add the correct display in IE 10+.
- */
-
-template {
-  display: none;
-}
-
-/**
- * Add the correct display in IE 10.
- */
-
 [hidden] {
   display: none;
 }
@@ -633,7 +267,8 @@ header li {
 	margin: 0 10px 0 10px;
 }
 
-button {
+.btn {
+	display: inline-block;
 	font-size: 0.7em;
 	padding: 15px;
   font-family: sans-serif;
@@ -648,9 +283,10 @@ button {
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
+  text-decoration: none;
 }
 
-button:hover {
+.btn:hover {
   background-color: #f14624;
   box-shadow: 0px 15px 20px #2c3892;
   color: #fff;
@@ -670,12 +306,15 @@ button:hover {
 
 header nav a:hover { color:#f14624; }
 
-.hamburger-icon { 
+.hamburger-icon {
 	z-index: 6;
 	cursor: pointer;
 	margin-right: 20px;
-	position: absolute; 
-	right: 0px; 
+	position: absolute;
+	right: 0px;
+	background: none;
+	border: none;
+	padding: 0;
 }
 
 .hamburger-icon .bar1, .bar2, .bar3 {
@@ -747,6 +386,7 @@ header nav a:hover { color:#f14624; }
 
 img {
 	max-width: 100%;
+	height: auto;
 }
 
 a {
@@ -810,6 +450,7 @@ section {
 	margin: 25px 0 10px 0;
 	border-radius: 15px;
 	border: white solid 1px;
+	height: auto;
 }
 
 .services {
@@ -833,6 +474,20 @@ section {
 	overflow: hidden;
 	border-radius: 15px;
 	box-shadow: 2px 3px white;
+	text-decoration: none;
+	display: block;
+	cursor: pointer;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service:hover {
+	transform: scale(1.03);
+	box-shadow: 4px 6px white;
+}
+
+.service:active {
+	transform: scale(0.98);
+	box-shadow: 1px 2px white;
 }
 
 .service-content {
@@ -851,9 +506,14 @@ section {
 	max-width: 50%;
 }
 
-.service-content button {
+.service-btn {
+	display: inline-block;
 	color: white;
 	background-color: #f14624;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-size: 0.8em;
+	font-weight: bold;
 }
 
 .service-background {
@@ -907,6 +567,7 @@ section {
 .side-by-side img {
 	object-fit: contain;
 	width: 25%;
+	height: auto;
 	max-height: 400px;
 	border-radius: 10px;
 }
@@ -996,63 +657,8 @@ section {
 .image-grid img {
   border: 1px solid rgba(0, 0, 0, 0.8);
   text-align: center;
-}
-
-.about-us-image-1 {
-	margin-top: -200px;
-}
-
-.about-slideshow {
-	border-radius: 15px;
-	width: 375px;
-	height: 500px;
-	background-color: #eeeeee;
-	margin: auto;
-	margin-bottom: 50px;
-	background-image: url("/images/people-working.jpg");
-	animation-name: slide;
-	animation-duration: 10s;
-	animation-direction: normal;
-	animation-timing-function: ease;
-	animation-iteration-count: infinite;
-}
-
-@keyframes slide {
-	0% {
-		background-position: 0 0;
-	}
-
-	12.5% {
-		background-position: 0 0;
-	}
-
-	25.0% {
-		background-position: -375px 0;
-	}
-
-	37.5% {
-		background-position: -375px 0;
-	}
-
-	50.0% {
-		background-position: -750px 0;
-	}
-
-	62.5% {
-		background-position: -750px 0;
-	}
-
-	75.0% {
-		background-position: -1125px 0;
-	}
-
-	87.5% {
-		background-position: -1125px 0;
-	}
-
-	100% {
-		background-position: 0 0;
-	}
+  width: 100%;
+  height: auto;
 }
 
 footer {
@@ -1074,10 +680,15 @@ footer {
 	width: 95%;
 	max-width: 500px;
 	padding: 15px;
+	text-align: center;
 }
 
 footer img {
 	max-width: 200px;
+}
+
+footer ul {
+	padding: 0;
 }
 
 footer li {
@@ -1091,10 +702,6 @@ footer li img{
 }
 
 @media only screen and (max-width: 760px) {
-	.about-us-image-1 {
-		margin-top: 0;
-	}
-
 	.header-logo {
 		width: 65%;
 		max-width: 500px;
