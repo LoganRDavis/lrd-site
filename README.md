@@ -9,6 +9,4 @@ make serve
 Then open http://localhost:8000
 
 ## Deploying
-```
-make deploy
-```
+Hosted on Cloudflare Pages. Pushing to `master` triggers a deploy automatically.

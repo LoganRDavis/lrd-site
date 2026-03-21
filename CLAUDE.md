@@ -9,7 +9,7 @@ Static personal website for loganrdavis.com. Pure HTML/CSS with no build system,
 ## Commands
 
 - `make serve` — Local dev server at http://localhost:8000
-- `make deploy` — Deploy to Google Cloud Storage
+- Pushing to `master` deploys automatically via Cloudflare Pages
 
 ## Architecture
 
@@ -25,4 +25,4 @@ Static personal website for loganrdavis.com. Pure HTML/CSS with no build system,
 - All asset paths use absolute paths from root (e.g., `/css/main.css`, `/images/...`)
 - Social/external links: GitHub, LinkedIn, resume PDF, and a Google Forms contact form
 - Images are stored in `images/` with subdirectories for logos (`images/logo/`) and drone photos (`images/drone/`)
-- Deploy excludes dotfiles, `README.md`, `CLAUDE.md`, `Makefile`, and `colors.txt` via `gsutil rsync -x`
+- Deploy excludes files listed in `.cfignore` (dotfiles, `README.md`, `CLAUDE.md`, `Makefile`, `colors.txt`)
