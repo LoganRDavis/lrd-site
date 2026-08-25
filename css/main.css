@@ -599,6 +599,50 @@ section {
 	word-break: break-all;
 }
 
+.legal-container {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 0 15px 1.5em 15px;
+}
+
+.legal {
+	background: white;
+	padding: 30px 40px;
+	line-height: 1.6;
+}
+
+.legal h2 {
+	margin-top: 1.75em;
+}
+
+.legal h2:first-of-type {
+	margin-top: 0.5em;
+}
+
+.legal .updated {
+	font-size: small;
+	font-style: italic;
+}
+
+.legal a {
+	text-decoration: underline;
+	color: #1a5fb4;
+	word-break: break-all;
+}
+
+.legal code {
+	background: #f1f1f1;
+	padding: 1px 5px;
+	border-radius: 3px;
+	word-break: break-all;
+}
+
+@media screen and (max-width:600px) {
+	.legal {
+		padding: 20px;
+	}
+}
+
 .image-grid {
   display: grid;
   grid-column-gap: 0;
@@ -663,6 +707,10 @@ footer {
 
 footer img {
 	max-width: 200px;
+}
+
+.footer-legal a {
+	text-decoration: underline;
 }
 
 footer ul {

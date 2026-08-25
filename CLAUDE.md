@@ -13,7 +13,7 @@ Static personal website for loganrdavis.com. Pure HTML/CSS with no build system,
 
 ## Architecture
 
-- **Pages**: `index.html` (home), `background.html` (work/education history), `portfolio.html` (project showcase), `404.html`
+- **Pages**: `index.html` (home), `background.html` (work/education history), `portfolio.html` (project showcase), `privacy.html` + `terms.html` (legal pages for the `lrdlocal-nas-backup` Google OAuth app; `noindex`, kept out of the sitemap), `404.html`
 - **Styles**: `css/main.css` (shared across main pages, based on HTML5 Boilerplate), `css/404.css` (standalone 404 page)
 - **Components**: `js/components.js` defines `<site-header>` and `<site-footer>` web components, used by all main pages
 - Header/footer/nav are defined once in the web components — edit `js/components.js` to change them

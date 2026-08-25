@@ -61,7 +61,8 @@ class SiteFooter extends HTMLElement {
               <p>
                 Copyright &copy; Logan R Davis<br>
                 All rights reserved.<br>
-                <a style="word-break: break-all;" href="mailto:logan@loganrdavis.com">logan@loganrdavis.com</a>
+                <a style="word-break: break-all;" href="mailto:logan@loganrdavis.com">logan@loganrdavis.com</a><br>
+                <span class="footer-legal"><a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms of Service</a></span>
               </p>
               <ul>
                 <li><a href="https://github.com/loganrdavis" rel="noopener noreferrer" aria-label="GitHub profile"><img src="/images/github-logo.webp" alt="Github Logo" width="40" height="40" style="max-width: unset;"></a></li>
