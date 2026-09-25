@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.loganrdavis.com)",
+      "Bash(npx playwright:*)",
+      "Read(//tmp/**)",
+      "Read(//private/tmp/**)",
+      "Bash(sips -g:*)",
+      "Read(//Users/loganrdavis/GitHub/lrd-site/**)"
+    ]
+  }
+}
